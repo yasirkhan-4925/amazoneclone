@@ -1,7 +1,18 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import '../css folder/product.css'
+import {StateContext} from '../StateContext'
 
 const Product = ({title , price , rating , image}) => {
+
+    const {dispatch} = useContext(StateContext)
+
+  
+    
+
+
+    const addToBasket = () => {
+        dispatch({type:"ADD_TO_BASKET",item:{title,price,rating,image}})
+    }
    
     return(
 
@@ -10,7 +21,7 @@ const Product = ({title , price , rating , image}) => {
        <div className="product__info">
     <p>{title}</p>
            <p className="product__price">
-               <small>RS</small>
+               <small>$</small>
     <strong>{price}</strong>
            </p>
            <div className="product__rating">
@@ -31,7 +42,7 @@ const Product = ({title , price , rating , image}) => {
 
        <img src={image} alt="shoes image"/>
 
-       <button>Add to Basket</button>
+       <button onClick={addToBasket}>Add to Basket</button>
 
 
 

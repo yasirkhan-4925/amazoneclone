@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../css folder/header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import { Link } from "react-router-dom";
+import { StateContext } from "../StateContext";
 
 const Header = () => {
+  const { basket } = useContext(StateContext);
   return (
     <div className="header">
-      <img
-        className="header__logo"
-        src="https://www.freepnglogos.com/uploads/amazon-png-logo-vector/large-images-amazon-png-logo-vector-7.png3ft3d1416935166817"
-        alt="amazoneicon"
-      />
+      <Link to="/">
+        <img
+          className="header__logo"
+          src="https://www.freepnglogos.com/uploads/amazon-png-logo-vector/large-images-amazon-png-logo-vector-7.png3ft3d1416935166817"
+          alt="amazoneicon"
+        />
+      </Link>
 
       <div className="header__search">
         <input className="header__searchinput" type="text" name="" id="" />
@@ -32,8 +37,11 @@ const Header = () => {
         </div>
       </div>
       <div className="header__cart">
-        <ShoppingBasketIcon className="header__basketicon" />
-        <span className="header__cartquantity">0</span>
+        <Link to="/checkout">
+          <ShoppingBasketIcon className="header__basketicon" />
+        </Link>
+
+        <span className="header__cartquantity">{basket.length}</span>
       </div>
     </div>
   );

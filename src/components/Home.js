@@ -14,7 +14,7 @@ const Home = () => {
         <div className="home__row">
           <Product
             id="173345"
-            title="Nike Running Shoes"
+            title="Nike Running Shoes "
             price={1999}
             image="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5816.png"
             rating={5}
