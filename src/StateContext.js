@@ -9,7 +9,11 @@ export const StateContext = createContext();
  const StateContextProvider = (props)=> {
       
        const [basket,dispatch] = useReducer(reducer,[])
-       console.log(basket)
+       
+ 
+       
+  
+      
 
        return (
 

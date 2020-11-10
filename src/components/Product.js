@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import '../css folder/product.css'
 import {StateContext} from '../StateContext'
 
-const Product = ({title , price , rating , image}) => {
+const Product = ({ id ,title , price , rating , image}) => {
 
     const {dispatch} = useContext(StateContext)
 
@@ -11,7 +11,7 @@ const Product = ({title , price , rating , image}) => {
 
 
     const addToBasket = () => {
-        dispatch({type:"ADD_TO_BASKET",item:{title,price,rating,image}})
+        dispatch({type:"ADD_TO_BASKET",item:{id,title,price,rating,image}})
     }
    
     return(

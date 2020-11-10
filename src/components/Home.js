@@ -31,14 +31,14 @@ const Home = () => {
           <Product id="23213232"
                     title="Haier Washing Machine"
                     price={35500}
-                    image="https://lh3.googleusercontent.com/proxy/_SU-HkD3UIUdDwA-6GFBnfhYnQQO-9J0nGffsfZiDVQtIG2p43W26ffMzo8u4LluVYKYVeiG5EGFfDY-JvYEH2ws11GWoq9Xn3OXiRQ7ESILxAHEin5w7Zi-1HVNsQJ1YCbzY7vf9mjLfwjER49mhv64"
+                    image="https://image.haier.com/pk/washing-machines/W020191010577165114652_450.png"
                     rating={3} 
            />
           <Product id="676565"
                    title="Samsung '30' inch Led Tv"
                    price={45000}
                    rating={5}
-                   image="https://lh3.googleusercontent.com/proxy/QUG-qmMndyehPlWF5NEHieZkJXkymRj7Yd9EmM5yQ-nvtjmTNvCiBTPsmvP1jaoZiJ2jCbK6xjHrvYAMk2c9Kwp9CQwk-gY0PtII-PeSj2xdxofAMA"
+                   image="https://lh3.googleusercontent.com/proxy/Lk2ePKdhWL76FXe3fcSvYgivDGyAIJHFsLzbuZaSDyhiFnZbHuNw4aFmAOzckHgLWBbxNBs89w45bDsyo45A726FxOa9jJcefuXlH-akznW5NrCvIrhOLj9tsi_YxogEy4Ya62jpumDi"
             />
           <Product id="9373243"
                    title="Camel Mountain Bag"
