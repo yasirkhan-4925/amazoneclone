@@ -15,14 +15,14 @@ const Home = () => {
           <Product
             id="173345"
             title="Nike Running Shoes "
-            price={1999}
+            price={19}
             image="https://pngimg.com/uploads/running_shoes/running_shoes_PNG5816.png"
             rating={5}
           />
           <Product
             id="231123"
             title="Samsung Galaxy S10"
-            price={70000}
+            price={150}
             image="https://purepng.com/public/uploads/large/samsung-galaxy-s10-prism-front-6bx.png"
             rating={4}
           />
@@ -30,19 +30,19 @@ const Home = () => {
         <div className="home__row">
           <Product id="23213232"
                     title="Haier Washing Machine"
-                    price={35500}
-                    image="https://image.haier.com/pk/washing-machines/W020191010577165114652_450.png"
+                    price={155}
+                    image="https://assets.stickpng.com/images/5a26af7f087102040a95d499.png"
                     rating={3} 
            />
           <Product id="676565"
                    title="Samsung '30' inch Led Tv"
-                   price={45000}
+                   price={200}
                    rating={5}
-                   image="https://lh3.googleusercontent.com/proxy/Lk2ePKdhWL76FXe3fcSvYgivDGyAIJHFsLzbuZaSDyhiFnZbHuNw4aFmAOzckHgLWBbxNBs89w45bDsyo45A726FxOa9jJcefuXlH-akznW5NrCvIrhOLj9tsi_YxogEy4Ya62jpumDi"
+                   image="https://lh3.googleusercontent.com/proxy/vz-5rXYVSnhC-Wm6RdRMdiclvMYKB5kusxdWptwKSoPtnGL-R0w7A8fRJ8krpFXPe0-jld7Enn2LQJ5-i9UB-4L4wt1r_4c6F_UTJeJ5p_w"
             />
           <Product id="9373243"
                    title="Camel Mountain Bag"
-                   price={2500}
+                   price={10}
                    rating={2}
                    image="https://www.pngarts.com/files/3/Travel-Backpack-PNG-Image.png"
            />
@@ -50,7 +50,7 @@ const Home = () => {
         <div className="home__row"></div>
         <Product id="475434"
                   title="Computer Table"
-                  price={21000}
+                  price={127}
                   rating={1}
                   image="https://i.pinimg.com/originals/c4/a7/a9/c4a7a911413810d79c197e3d20bb54de.png"
          />

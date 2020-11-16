@@ -4,9 +4,22 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { StateContext } from "../StateContext";
+import {AuthContext} from '../AuthContext'
+import {auth} from '../fbconfig'
 
 const Header = () => {
   const { basket } = useContext(StateContext);
+  
+  const {user} = useContext(AuthContext)
+ console.log("user of header",user)
+  
+  const signOut = () =>{
+      if(user)
+      {
+         auth.signOut();
+      }
+  }
+
   return (
     <div className="header">
       <Link to="/">
@@ -23,10 +36,14 @@ const Header = () => {
       </div>
 
       <div className="header__selectitem">
-        <div className="header__items">
-          <span className="item1">hello guest</span>
-          <span className="item2">sign in</span>
+      <Link to={!user && "/signin"} style={{textDecoration:"none"}}>
+        <div onClick={signOut} className="header__items">
+         
+  <span className="item1">{user ? user.email : "Hello Guest "}</span>
+  <span  className="item2">{user ? "SignOut" : "Sign In"}</span>
+         
         </div>
+        </Link>
         <div className="header__items">
           <span className="item1">Returns</span>
           <span className="item2">& Orders</span>

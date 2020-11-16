@@ -3,9 +3,12 @@ import "../css folder/checkout.css";
 import Subtotal from "../components/Subtotal";
 import CheckOutProduct from "./CheckOutProduct";
 import { StateContext } from "../StateContext";
+import {AuthContext} from '../AuthContext'
+
 
 const Checkout = () => {
   const { basket } = useContext(StateContext);
+  const {user} = useContext(AuthContext)
 
   return (
     <div className="checkout">
@@ -15,7 +18,7 @@ const Checkout = () => {
           src="https://www.junglescout.com/wp-content/uploads/2020/05/Prime-day-banner.png"
           alt=""
         />
-
+         <h3 style={{padding:"10px"}}>{user ? `Hello ${user.email}` : "Hello Guest"}</h3>
         <div>
           <h2 className="checkout__title">
             Your Shopping Basket
