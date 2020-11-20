@@ -31,14 +31,14 @@ const Home = () => {
           <Product id="23213232"
                     title="Haier Washing Machine"
                     price={155}
-                    image="https://assets.stickpng.com/images/5a26af7f087102040a95d499.png"
+                    image="https://pngimg.com/uploads/washing_machine/washing_machine_PNG15592.png"
                     rating={3} 
            />
           <Product id="676565"
                    title="Samsung '30' inch Led Tv"
                    price={200}
                    rating={5}
-                   image="https://lh3.googleusercontent.com/proxy/vz-5rXYVSnhC-Wm6RdRMdiclvMYKB5kusxdWptwKSoPtnGL-R0w7A8fRJ8krpFXPe0-jld7Enn2LQJ5-i9UB-4L4wt1r_4c6F_UTJeJ5p_w"
+                   image="https://images.samsung.com/is/image/samsung/pk-fhdtv-n5000-global-ua40n5000arxmm-frontblack-118633029?$PD_GALLERY_L_JPG$"
             />
           <Product id="9373243"
                    title="Camel Mountain Bag"
